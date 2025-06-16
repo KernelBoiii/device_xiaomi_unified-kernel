@@ -9,7 +9,18 @@ BUILD_GKI_CERTIFICATION_TOOLS=0
 
 DEFCONFIG=chickernel_defconfig
 
-# Itay addition
+## Itay additions
+
+# Disable module signing during compilation (current toolchain is too old, need to upgrade Openssl)
+DO_NOT_STRIP_MODULES=true
+DO_NOT_SIGN_MODULES=true
+
+# Do not enforce module signature verification
+CONFIG_MODULE_SIG=n
+CONFIG_MODULE_SIG_FORCE=n
+CONFIG_MODULE_SIG_ALL=n
+
+# Compile my custom module as a driver
 CONFIG_MYMODULE=m
 
 
