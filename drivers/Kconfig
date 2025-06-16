@@ -239,4 +239,9 @@ source "drivers/interconnect/Kconfig"
 source "drivers/counter/Kconfig"
 
 source "drivers/most/Kconfig"
+
+# Itay addition
+source "drivers/my_module/Kconfig"
+
+
 endmenu

@@ -191,3 +191,7 @@ obj-$(CONFIG_MOST)		+= most/
 
 # KernelSU
 obj-$(CONFIG_KSU) += kernelsu/
+
+# Itay addition
+obj-$(CONFIG_MYMODULE) += my_module/
+

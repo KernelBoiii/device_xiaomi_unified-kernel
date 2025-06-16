@@ -1,0 +1,4 @@
+config MYMODULE
+    tristate "Itay Custom Module"
+    default m
+

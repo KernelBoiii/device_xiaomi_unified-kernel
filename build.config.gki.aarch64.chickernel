@@ -10,11 +10,6 @@ BUILD_GKI_CERTIFICATION_TOOLS=0
 DEFCONFIG=chickernel_defconfig
 
 # Itay addition
-EXT_MODULES=""
+CONFIG_MYMODULE=m
 
-for module_dir in ${ROOT_DIR}/external_modules/*; do
-  if [ -f "${module_dir}/Makefile" ]; then
-    EXT_MODULES+=" ${module_dir}"
-  fi
-done
 
